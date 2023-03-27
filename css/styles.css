@@ -1,6 +1,90 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #f5f4fa;
+  --tertiary-color: #2f303a;
+  --quaternary-color: #2196f3;
+
+  --text-color-1: #212121;
+  --text-color-2: #757575;
+  --text-color-3: #ffffff;
+  --text-color-4: #2196f3;
+  --text-color-5: #000000;
+
+  --line-color: #ececec;
+}
+
 body {
+  background-color: var(--primary-color);
   font-family: "Roboto", sans-serif;
 }
 .logotype {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+
+.logotext {
+  color: var(--text-color-4);
+  text-decoration: none;
+}
+
+.logo-header-second-word {
+  color: var(--text-color-5);
+  text-decoration: none;
+}
+
+.logotext:hover .logo-header-second-word:hover {
+  color: var(--text-color-4);
+}
+.logotext:focus {
+  color: var(--text-color-4);
+}
+
+.logo-footer-second-word {
+  color: var(--text-color-3);
+  text-decoration: none;
+}
+
+.header {
+  background: var(--primary-color);
+  border-bottom: 1px solid var(--line-color);
+}
+
+.footer {
+  background: var(--tertiary-color);
+}
+
+.m-item {
+  color: var(--text-color-1);
+  text-decoration: none;
+}
+
+.m-item:hover {
+  color: var(--text-color-4);
+  text-decoration: none;
+}
+
+.m-item:focus {
+  color: var(--text-color-4);
+  text-decoration: none;
+  outline: none;
+}
+
+.header-link {
+  color: var(--text-color-2);
+  text-decoration: none;
+}
+.header-link:hover {
+  color: var(--text-color-4);
+  text-decoration: none;
+}
+.header-link:focus {
+  color: var(--text-color-4);
+  text-decoration: none;
+  outline: none;
 }
