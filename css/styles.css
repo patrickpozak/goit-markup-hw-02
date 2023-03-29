@@ -35,22 +35,26 @@ body {
   color: var(--text-color-4);
 }
 .logotext:focus {
-  /* Nie wiem czemu nie mogę podświetlić słowa Studio na niebiesko przy opcji focus?? */
-  color: var(--text-color-4);
   outline: none;
 }
+
 .logo-header-second-word {
   color: var(--text-color-5);
 }
-
-.logo-header-second-word:hover {
+.logotext:hover .logo-header-second-word {
+  color: var(--text-color-4);
+}
+.logotext:focus .logo-header-second-word {
   color: var(--text-color-4);
 }
 
 .logo-footer-second-word {
   color: var(--text-color-3);
 }
-.logo-footer-second-word:hover {
+.logotext:hover .logo-footer-second-word {
+  color: var(--text-color-4);
+}
+.logotext:focus .logo-footer-second-word {
   color: var(--text-color-4);
 }
 
@@ -102,21 +106,6 @@ body {
   background: var(--tertiary-color);
 }
 
-.footer-link {
-  color: var(--text-color-6);
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.714;
-}
-.footer-link:hover {
-  color: var(--text-color-4);
-  text-decoration: none;
-}
-.footer-link:focus {
-  color: var(--text-color-4);
-  outline: none;
-}
-
 .footer-link-portfolio {
   color: var(--text-color-6);
   font-size: 14px;
@@ -127,6 +116,20 @@ body {
   text-decoration: none;
 }
 .footer-link-portfolio:focus {
+  color: var(--text-color-4);
+  outline: none;
+}
+
+.footer-link {
+  color: var(--text-color-6);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.714;
+}
+.footer-link:hover {
+  color: var(--text-color-4);
+}
+.footer-link:focus {
   color: var(--text-color-4);
   outline: none;
 }
@@ -144,14 +147,13 @@ body {
 .contact-address:hover {
   color: var(--text-color-4);
 }
-/* Podobna sytuacja poniżej: nie wiem czemu nie jestem w stanie podświetlić na niebiesko przy focusie adresu kontaktu */
 .contact-address:focus {
   color: var(--text-color-4);
 }
+
 .button-list {
   list-style-type: none;
 }
-/* Dlaczego w button-item nie dziedziczy czcionki roboto i koloru?? */
 .button-list .button-item {
   background: var(--secondary-color);
   border: none;
@@ -162,13 +164,13 @@ body {
 
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
 }
 .button-item:hover {
   background: var(--quaternary-color);
   color: var(--text-color-3);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 .button-item:focus {
   background: var(--quaternary-color);
@@ -206,10 +208,10 @@ body {
   text-transform: uppercase;
   color: var(--text-color-3);
 }
-.header-terriary {
+.header-tertiary {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.143;
+  line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -275,7 +277,7 @@ body {
 }
 .department-name {
   font-size: 16px;
-  line-height: 1, 875;
+  line-height: 1.875;
 
   letter-spacing: 0.03em;
   color: var(--text-color-2);
